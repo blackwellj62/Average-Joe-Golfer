@@ -1,0 +1,7 @@
+.card{
+    margin:20px
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
