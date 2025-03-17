@@ -1,0 +1,92 @@
+.auth-container {
+    border: 1px solid gray;
+    margin: 3rem 15rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #3498db;
+    /* Ensure the container has a max-width and adjusts on smaller screens */
+    max-width: 100%;
+  }
+  
+  .header {
+    font-size: 2rem;
+  }
+  
+  /* Ensure the form takes up the full width and adjusts properly */
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Adjust input padding for a better mobile experience */
+  .auth-form-input {
+    padding: 0.5rem;
+    width: 100%; /* Make input fields take up full width */
+    max-width: 400px; /* Limit the width to make them look good on larger screens */
+    margin-bottom: 1rem; /* Add space between inputs */
+  }
+  
+  /* Register link with responsive font size */
+  .register-link {
+    text-align: center;
+    color: blue;
+    font-size: 1rem;
+  }
+  
+  .register-link:visited {
+    color: inherit;
+  }
+  
+  .auth-fieldset {
+    margin: 0.25rem 0;
+  }
+  
+  /* Media Query for smaller screens (Mobile) */
+  @media (max-width: 768px) {
+    .auth-container {
+      margin: 2rem 1rem; /* Less margin on mobile */
+      padding: 1.5rem; /* Less padding on mobile */
+    }
+  
+    .header {
+      font-size: 1.5rem; /* Smaller header on mobile */
+    }
+  
+    .auth-form-input {
+      padding: 0.5rem; /* Ensure inputs look good on mobile */
+      width: 100%; /* Full width inputs */
+    }
+  
+    .auth-form {
+      padding: 1rem; /* Add some padding to the form for mobile */
+    }
+  
+    .register-link {
+      font-size: 0.875rem; /* Smaller link text on mobile */
+    }
+  }
+  
+  /* Media Query for very small screens (e.g., smaller phones) */
+  @media (max-width: 480px) {
+    .header {
+      font-size: 1.25rem; /* Adjust header size further */
+    }
+  
+    .auth-container {
+      margin: 1rem; /* Further reduce margins on very small screens */
+      padding: 1rem; /* Reduce padding for small screens */
+    }
+  
+    .auth-form-input {
+      padding: 0.5rem;
+      width: 100%; /* Full width inputs for small screens */
+    }
+  
+    .register-link {
+      font-size: 0.75rem; /* Even smaller font size for register link */
+    }
+  }
+  
+  
