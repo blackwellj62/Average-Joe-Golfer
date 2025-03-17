@@ -20,7 +20,7 @@ html,body{
     background-image:url('https://t3.ftcdn.net/jpg/05/08/09/52/360_F_508095214_KifgzVYk4yvIQoa6cougsQS5uDbMirLG.jpg');
     background-size:cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat:repeat-y;
     height: 100%;
     width: 100%;
 }
