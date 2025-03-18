@@ -14,7 +14,7 @@ export const Register = (props) => {
   const registerNewUser = () => {
     const newUser = {
       ...user,
-      cohort: parseInt(user.cohort),
+      experience: parseInt(user.experience),
     }
 
     createUser(newUser).then((createdUser) => {

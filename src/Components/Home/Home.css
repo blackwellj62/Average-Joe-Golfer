@@ -23,4 +23,5 @@ html,body{
     background-repeat:repeat-y;
     height: 100%;
     width: 100%;
+    background-blend-mode: darken;
 }
