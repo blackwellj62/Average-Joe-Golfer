@@ -1,7 +1,23 @@
 .card{
-    margin:20px
+    margin:20px;
+    background-color:bisque ;
 }
-
+.card-title{
+    font-weight: bold;
+}
 .btn:hover{
     transform:scale(1.1);
+}
+.likeBtn{
+    margin:10px;
+    width:100px;
+    font-size: xx-large;
+    text-align: center;
+    justify-content: center;
+    
+    border-radius: 6.2px;
+    text-shadow: 4px 4px black;
+}
+.likeBtn:hover{
+    transform: scale(1.33);
 }
