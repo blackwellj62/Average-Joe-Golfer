@@ -1,4 +1,6 @@
-html,
+html{
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
 body,
 div,
 span,
@@ -6,7 +8,6 @@ applet,
 object,
 iframe,
 h1,
-h3,
 h4,
 h5,
 h6,
@@ -94,4 +95,8 @@ a {
 
 h2 {
   font-size: 3rem;
+}
+
+h3{
+  font-size: 2rem;
 }
