@@ -1,0 +1,23 @@
+.form-container{
+    text-align: center;
+    margin:62px;
+    padding: 10px;
+    background-color: bisque;
+    border:1px solid black;
+    border-radius: 5px; 
+    height:fit-content;  
+    font-family: inherit;
+}
+.form-control{
+    text-align: center;
+}
+.form-body{
+    margin: 10px 0;
+    height:250px;
+    text-align: center;
+}
+
+.form-category{
+    margin: 40px 0;
+    
+}
