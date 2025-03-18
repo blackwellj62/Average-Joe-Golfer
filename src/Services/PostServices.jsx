@@ -18,3 +18,10 @@ export const newPost = (post) => {
         body: JSON.stringify(post)
     })
 }
+
+export const deletePost = (id) => {
+    return fetch(`http://localhost:8088/posts/${id}`,{
+        method: "DELETE",
+        
+    })
+}   

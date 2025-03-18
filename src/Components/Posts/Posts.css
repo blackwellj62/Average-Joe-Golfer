@@ -21,3 +21,17 @@
 .likeBtn:hover{
     transform: scale(1.33);
 }
+.btn{
+    margin:10px 0;
+}
+
+.card-footer{
+    margin: 25px 0;
+}
+
+.text-body-secondary{
+    font-size:xx-large;
+}
+.card-text{
+    font-size: x-large;
+}
