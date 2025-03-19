@@ -35,3 +35,7 @@
 .card-text{
     font-size: x-large;
 }
+.card-header a{
+    color: blue;
+    text-decoration: underline;
+}
