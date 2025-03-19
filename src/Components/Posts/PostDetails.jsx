@@ -32,7 +32,7 @@ export const PostDetails = ({currentUser}) => {
           </p>
           {currentUser.id === post.userId ?
           <button className="btn btn-primary" onClick={()=>{navigate(`/edit/${post.id}`)}}>Edit</button> :
-          <LikeButton/>}
+          <LikeButton currentUser={currentUser} post={post}/>}
         </div>
         <div className="card-footer text-body-secondary">{post.likes?.length}❤️</div>
         
