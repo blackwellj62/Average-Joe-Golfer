@@ -21,7 +21,7 @@ export const AllPosts = () => {
                 <div className="card-body">
                 <h5 className="card-title">{post.title}</h5>
                 <p className="card-text">
-                    {post.likes.length}⛳
+                    {post.likes.length}❤️
                 </p>
                 <Link to={`/${post.id}`} key={post.id}><button className="btn btn-primary">Read Review</button></Link>
                 </div>

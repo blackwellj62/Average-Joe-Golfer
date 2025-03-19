@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import "./Posts.css"
 import { useParams } from "react-router-dom"
 import { getPostsById } from "../../Services/PostServices.jsx"
+import { LikeButton } from "../LikeButton/LikeButton.jsx"
 
 
 export const PostDetails = ({currentUser}) => {
@@ -30,9 +31,9 @@ export const PostDetails = ({currentUser}) => {
           </p>
           {currentUser.id === post.userId ?
           <button className="btn btn-primary">Edit</button> :
-          <button className="btn btn-primary likeBtn">⛳</button>}
+          <LikeButton/>}
         </div>
-        <div className="card-footer text-body-secondary">{post.likes?.length}⛳</div>
+        <div className="card-footer text-body-secondary">{post.likes?.length}❤️</div>
         
       </div>
     );

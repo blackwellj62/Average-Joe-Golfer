@@ -1,0 +1,9 @@
+.like-btn{
+    background-color: bisque;
+    border:none;
+    font-size: xx-large;
+    margin: 10px;
+}
+.like-btn:hover{
+    transform: scale(1.41);
+}
