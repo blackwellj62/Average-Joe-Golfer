@@ -1,53 +1,62 @@
 import { useEffect, useState } from "react"
-import "./Forms.css"
+import { useNavigate, useParams } from "react-router-dom"
+import { getPostsById, updatePost } from "../../Services/PostServices.jsx"
 import { getCategories } from "../../Services/Categories.jsx"
-import { newPost } from "../../Services/PostServices.jsx"
-import { useNavigate } from "react-router-dom"
 
-export const NewPost = ({currentUser}) => {
+export const EditPost = ({currentUser}) => {
+    const [post, setPost] = useState({})
     const [categories, setCategories] = useState([])
-    const [chosenCategory, setChosenCategory] = useState('')
-    const [title, setTitle] = useState('')
-    const [body, setBody] = useState('')
-    const navigate= useNavigate()
+    const {postId} = useParams()
+    const navigate = useNavigate()
 
     useEffect(()=>{
-        getCategories().then(categoryArray => {
+        getPostsById(postId).then(data=>{
+            const postObj = data
+            setPost(postObj)
+        })
+    },[postId])
+
+    useEffect(()=>{
+        getCategories().then(categoryArray=>{
             setCategories(categoryArray)
         })
     },[])
 
-    const currentDate = new Date().toLocaleDateString()
+    const handleInputChange = (event) => {
+        const stateCopy = {...post}
+        stateCopy[event.target.name] = event.target.value
+        setPost(stateCopy)
+    }
 
     const handleSave = (event) => {
         event.preventDefault()
-        const post = {
-            title: title,
-            body: body,
-            date:  currentDate,
+        const editedPost = {
+            id: post.id,
+            title: post.title,
+            body: post.body,
+            date: currentDate,
             userId: currentUser.id,
-            categoryId: parseInt(chosenCategory)
+            categoryId: parseInt(post.categoryId)
         }
-        newPost(post).then(()=>{
-            navigate('/my-posts')
+        updatePost(editedPost).then(()=>{
+            navigate("/my-posts")
         })
     }
 
-    const formIsValid = title.trim() !== "" && body.trim() !== "" && chosenCategory !== '0'
-
+    const currentDate = new Date().toLocaleDateString()
+    const formIsValid = post.title !== "" && post.body !== "" && post.categoryId !== "0"
+    
     return(
         <form className="form-container">
-            <h2>New Post</h2>
+            <h2>Edit Post</h2>
             <fieldset>
                 <div className="form-title">
                     <h3>Title:</h3>
                     <input className="form-control" 
-                    type="text" placeholder="Enter Title Here" 
+                    type="text" value={post.title? post.title : ""} 
                     name="title"
                     required
-                    onChange={(event)=>{
-                        setTitle(event.target.value)
-                    }}>
+                    onChange={handleInputChange}>
                      </input>
                 </div>
             </fieldset>
@@ -55,12 +64,10 @@ export const NewPost = ({currentUser}) => {
                 <div className="form-body">
                     <h3>Body:</h3>
                     <input className="form-control form-body" 
-                    type="text" placeholder="Type Post Here" 
+                    type="text" value={post.body? post.body : ""} 
                     name="body"
                     required
-                    onChange={(event)=>{
-                        setBody(event.target.value)
-                    }}>
+                    onChange={handleInputChange}>
                      </input>
                 </div>
             </fieldset>
@@ -68,9 +75,9 @@ export const NewPost = ({currentUser}) => {
                 <div className="form-category">
                     <h3>Category:</h3>
                     <select className="select-topic"
-                    onChange={(event)=>{
-                        setChosenCategory(event.target.value)
-                    }}>
+                    name="categoryId"
+                    onChange={handleInputChange}>
+                        <option >{post.category?.name}</option>
                         <option value="0">Choose a Category</option>
                         {categories.map(category =>{
                             return(<option value={category.id} key={category.id}>{category.name}</option> )

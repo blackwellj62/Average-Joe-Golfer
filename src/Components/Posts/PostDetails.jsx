@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import "./Posts.css"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { getPostsById } from "../../Services/PostServices.jsx"
 import { LikeButton } from "../LikeButton/LikeButton.jsx"
 
@@ -9,6 +9,7 @@ export const PostDetails = ({currentUser}) => {
 
     const [post, setPost] = useState({})
     const {postId} = useParams()
+    const navigate = useNavigate()
 
     useEffect(()=>{
         getPostsById(postId).then(data =>{
@@ -30,7 +31,7 @@ export const PostDetails = ({currentUser}) => {
            {post.date}
           </p>
           {currentUser.id === post.userId ?
-          <button className="btn btn-primary">Edit</button> :
+          <button className="btn btn-primary" onClick={()=>{navigate(`/edit/${post.id}`)}}>Edit</button> :
           <LikeButton/>}
         </div>
         <div className="card-footer text-body-secondary">{post.likes?.length}❤️</div>
