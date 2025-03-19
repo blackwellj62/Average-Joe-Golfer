@@ -7,6 +7,8 @@ import { useEffect, useState } from "react"
 import { NewPost } from "../Components/Forms/NewPost.jsx"
 import { MyPosts } from "../Components/Posts/MyPosts.jsx"
 import { EditPost } from "../Components/Forms/EditPost.jsx"
+import { Profile } from "../Components/Profile/Profile.jsx"
+import { AuthorProfile } from "../Components/Profile/AuthorProfile.jsx"
 
 export const ApplicationViews = () => {
     const [currentUser, setCurrentUser] = useState({})
@@ -25,12 +27,14 @@ export const ApplicationViews = () => {
                 <Outlet/>
                 </>
             }>
-            <Route index element={<Home/>}/>
-            <Route path="/posts" element={<AllPosts/>}/>
+            <Route index element={<Home currentUser={currentUser}/>}/>
+            <Route path="/posts" element={<AllPosts currentUser={currentUser}/>}/>
             <Route path="/:postId" element={<PostDetails currentUser={currentUser}/>}/>
             <Route path="/new-post" element={<NewPost currentUser={currentUser}/>}/>
             <Route path="/my-posts" element={<MyPosts currentUser={currentUser}/>}/>
             <Route path="/edit/:postId" element={<EditPost currentUser={currentUser}/>}/>
+            <Route path="/profile/" element={<Profile currentUser={currentUser}/>}/>
+            <Route path="/profile/:userId" element={<AuthorProfile currentUser={currentUser}/>}/>
             </Route>
         </Routes>
     )

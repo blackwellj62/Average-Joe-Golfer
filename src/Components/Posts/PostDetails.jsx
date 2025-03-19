@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import "./Posts.css"
-import { useNavigate, useParams } from "react-router-dom"
+import { Link, useNavigate, useParams } from "react-router-dom"
 import { getPostsById } from "../../Services/PostServices.jsx"
 import { LikeButton } from "../LikeButton/LikeButton.jsx"
 
@@ -21,7 +21,9 @@ export const PostDetails = ({currentUser}) => {
     return (
       <div className="card text-center">
         <div className="card-header">
+            <Link to={`/profile/${post.user?.id}`}>
             {post.user?.name}<br/>
+            </Link>
             {post.category?.name}
             </div>
         <div className="card-body">
