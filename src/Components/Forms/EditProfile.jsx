@@ -16,6 +16,14 @@ export const EditProfile = ({currentUser}) => {
         setFoundUser(findUser)
     },[users, currentUser])
 
+    const handleInputChange = (event) => {
+        const stateCopy = {...foundUser}
+        stateCopy[event.target.name] = event.target.value
+        setFoundUser(stateCopy)
+    }
+
+    const formIsValid = foundUser.name !== "" && foundUser.email !== "" && foundUser.experience !== ""
+
     return (
         <form className="form-container">
         <fieldset>
@@ -27,6 +35,7 @@ export const EditProfile = ({currentUser}) => {
                 value={foundUser?.name ? foundUser.name : ""}
                 name="name"
                 required
+                onChange={handleInputChange}
             ></input>
             </div>
         </fieldset>
@@ -39,6 +48,7 @@ export const EditProfile = ({currentUser}) => {
                 value={foundUser?.email ? foundUser.email : ""}
                 name="email"
                 required
+                onChange={handleInputChange}
             ></input>
             </div>
         </fieldset>
@@ -51,9 +61,11 @@ export const EditProfile = ({currentUser}) => {
                 value={foundUser?.experience ? foundUser.experience : ""}
                 name="experience"
                 required
+                onChange={handleInputChange}
             ></input>
             </div>
         </fieldset>
+        {formIsValid ? <button className="btn btn-primary">Save</button> : ""}
         </form>
     );
     };
