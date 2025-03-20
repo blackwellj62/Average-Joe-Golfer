@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react"
 import "./Profile.css"
 import { getAllUsers } from "../../Services/Users.jsx"
+import { useNavigate } from "react-router-dom"
 
 export const Profile = ({currentUser}) => {
     const [users, setUsers] = useState([])
     const [loggedInUser, setLoggedInUser] = useState({})
+    const navigate = useNavigate()
     
     useEffect(()=>{
        getAllUsers().then(userArray=>{
@@ -28,7 +30,7 @@ export const Profile = ({currentUser}) => {
             {loggedInUser?.experience}
             {loggedInUser?.experience === 1 ? ' year' : ' years'} of golf experience
         </p>
-        <button className="btn btn-primary">Edit</button>
+        <button className="btn btn-primary" onClick={()=>{navigate('/edit-profile')}}>Edit</button>
         </div>
     </div>
     );
