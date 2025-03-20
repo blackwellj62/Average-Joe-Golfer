@@ -21,16 +21,14 @@ export const PostDetails = ({currentUser}) => {
     return (
       <div className="card text-center">
         <div className="card-header">
-            <Link to={`/profile/${post.user?.id}`}>
-            {post.user?.name}<br/>
-            </Link>
             {post.category?.name}
-            </div>
+        </div>
         <div className="card-body">
           <h5 className="card-title">{post.title}</h5>
+            By:<Link to={`/profile/${post.user?.id}`}>{post.user?.name}<br/></Link>
+           {post.date}
           <p className="card-text">
            {post.body}<br/>
-           {post.date}
           </p>
           {currentUser.id === post.userId ?
           <button className="btn btn-primary" onClick={()=>{navigate(`/edit/${post.id}`)}}>Edit</button> :

@@ -25,11 +25,17 @@ export const MyPosts = ({currentUser}) => {
     },[allPosts,currentUser])
 
     const handleDelete = (userPosts) => {
-        deletePost(userPosts)
-        reFetch(userPosts)
+        deletePost(userPosts).then(()=>{
+          reFetch(userPosts)
+        })
     }
     
-
+    if (userPosts.length === 0) {
+      return (
+        <div className="no-posts">
+          <p>Oh no! You don't have any posts! Try making a new post:) </p>
+        </div>
+    )};
     return userPosts.map((post) => {
       return (
         <div className="card" key={post.id}>

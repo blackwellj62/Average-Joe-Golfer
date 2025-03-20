@@ -68,6 +68,7 @@ export const NewPost = ({currentUser}) => {
                 <div className="form-category">
                     <h3>Category:</h3>
                     <select className="select-topic"
+                    name="category"
                     onChange={(event)=>{
                         setChosenCategory(event.target.value)
                     }}>

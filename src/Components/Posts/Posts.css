@@ -35,7 +35,16 @@
 .card-text{
     font-size: x-large;
 }
-.card-header a{
+.card-body a{
     color: blue;
     text-decoration: underline;
+}
+.no-posts{
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    margin: 41px;
+}
+.card-text{
+    margin:5px;
 }
