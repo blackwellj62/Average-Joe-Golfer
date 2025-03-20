@@ -33,7 +33,7 @@ export const NewPost = ({currentUser}) => {
         })
     }
 
-    const formIsValid = title.trim() !== "" && body.trim() !== "" && chosenCategory !== '0'
+    const formIsValid = title.trim() !== "" && body.trim() !== "" && chosenCategory !== "" && chosenCategory !== "0"
 
     return(
         <form className="form-container">

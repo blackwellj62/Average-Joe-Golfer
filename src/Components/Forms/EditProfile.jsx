@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-import { getAllUsers } from "../../Services/Users.jsx";
+import { getAllUsers, updateUser } from "../../Services/Users.jsx";
+import { useNavigate } from "react-router-dom";
 
 export const EditProfile = ({currentUser}) => {
     const [users, setUsers] = useState([])
     const [foundUser, setFoundUser] = useState({})
-    
+    const navigate = useNavigate()
+
     useEffect(()=>{
         getAllUsers().then(userArray => {
             setUsers(userArray)
@@ -22,7 +24,20 @@ export const EditProfile = ({currentUser}) => {
         setFoundUser(stateCopy)
     }
 
-    const formIsValid = foundUser.name !== "" && foundUser.email !== "" && foundUser.experience !== ""
+    const handleSave = (event) => {
+        event.preventDefault()
+        const editedProfile = {
+            id: foundUser.id,
+            name: foundUser.name,
+            email: foundUser.email,
+            experience: parseInt(foundUser.experience)
+        }
+        updateUser(editedProfile).then(()=>{
+            navigate('/profile')
+        })
+    }
+
+    const formIsValid = foundUser?.name !== "" && foundUser?.email !== "" && foundUser?.experience !== ""
 
     return (
         <form className="form-container">
@@ -65,7 +80,7 @@ export const EditProfile = ({currentUser}) => {
             ></input>
             </div>
         </fieldset>
-        {formIsValid ? <button className="btn btn-primary">Save</button> : ""}
+        {formIsValid ? <button className="btn btn-primary" onClick={handleSave}>Save</button> : ""}
         </form>
     );
     };
