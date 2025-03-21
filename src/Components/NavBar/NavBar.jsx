@@ -18,6 +18,9 @@ export const NavBar = () => {
                 <Link to="/my-posts" className="navbar-link">My Posts</Link>
             </li>
             <li className="navbar-item">
+                <Link to="/favorites" className="navbar-link">Favorites</Link>
+            </li>
+            <li className="navbar-item">
                 <Link to="/profile" className="navbar-link">Profile</Link>
             </li>
             {localStorage.getItem("average-joe_user") ? (

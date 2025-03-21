@@ -7,3 +7,7 @@ export const LikedPost = (newLike) => {
         body: JSON.stringify(newLike)
     })
 }
+
+export const getLikes = () => {
+    return fetch('http://localhost:8088/likes').then(res => res.json())
+}

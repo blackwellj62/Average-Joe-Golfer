@@ -10,6 +10,7 @@ import { EditPost } from "../Components/Forms/EditPost.jsx"
 import { Profile } from "../Components/Profile/Profile.jsx"
 import { AuthorProfile } from "../Components/Profile/AuthorProfile.jsx"
 import { EditProfile } from "../Components/Forms/EditProfile.jsx"
+import { Favorites } from "../Components/Posts/Favorites.jsx"
 
 export const ApplicationViews = () => {
     const [currentUser, setCurrentUser] = useState({})
@@ -37,6 +38,7 @@ export const ApplicationViews = () => {
             <Route path="/profile/" element={<Profile currentUser={currentUser}/>}/>
             <Route path="/profile/:userId" element={<AuthorProfile currentUser={currentUser}/>}/>
             <Route path="/edit-profile" element={<EditProfile currentUser={currentUser}/>}/>
+            <Route path="/favorites" element={<Favorites currentUser={currentUser}/>}/>
             </Route>
         </Routes>
     )
