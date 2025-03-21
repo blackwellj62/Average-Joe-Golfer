@@ -11,3 +11,9 @@ export const LikedPost = (newLike) => {
 export const getLikes = () => {
     return fetch('http://localhost:8088/likes').then(res => res.json())
 }
+
+export const removeLikes = (id) => {
+    return fetch(`http://localhost:8088/likes/${id}?&_expand=user`,{
+        method: "DELETE",
+    })
+}

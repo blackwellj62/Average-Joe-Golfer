@@ -23,7 +23,7 @@ export const LikeButton = ({currentUser, post}) => {
           postId: post.id
         }
         LikedPost(newLike).then(()=>{
-          navigate("/posts")
+          navigate("/favorites")
         })
     };
   

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { getAllPosts } from "../../Services/PostServices.jsx"
-import { getLikes } from "../../Services/Likes.jsx"
+import { getLikes, removeLikes} from "../../Services/Likes.jsx"
 import { Link } from "react-router-dom"
 
 export const Favorites = ({currentUser}) => {
@@ -11,15 +11,20 @@ export const Favorites = ({currentUser}) => {
     const [filteredPosts, setFilteredPosts] = useState([])
 
     useEffect(()=>{
-        getAllPosts().then(postArray=>{
-            setAllPosts(postArray)
-        })
+        reFetch()
     },[])
-
-    useEffect(()=>{
+    
+    const reFetch = () => {
+        getAllPosts().then(postsArray => {
+            setAllPosts(postsArray)
+        })    
         getLikes().then(likesArray=>{
             setAllLikes(likesArray)
         })
+    }
+
+    useEffect(()=>{
+        reFetch()
     },[])
 
     useEffect(()=>{
@@ -34,6 +39,18 @@ export const Favorites = ({currentUser}) => {
         setFilteredPosts(foundPosts);   
     }, [filteredLikes, allPosts]);
 
+    const handleRemove = (postId) => {
+        const likeToRemove = filteredLikes.find(
+          (like) => like.userId === currentUser.id && like.postId === postId
+        );
+    
+        if (likeToRemove) {
+          removeLikes(likeToRemove.id).then(() => {
+            reFetch();
+          });
+        }
+      };
+    
     if (filteredPosts.length === 0) {
         return (
           <div className="no-posts">
@@ -51,7 +68,7 @@ export const Favorites = ({currentUser}) => {
                 <button className="btn btn-primary">Read Review</button>
               </Link>
               <div className="card-footer">
-                <button className="btn btn-danger" >Remove from Favorites</button>
+                <button className="btn btn-danger" onClick={()=>{handleRemove(post.id)}} >Remove from Favorites</button>
               </div>
             </div>
           </div>
