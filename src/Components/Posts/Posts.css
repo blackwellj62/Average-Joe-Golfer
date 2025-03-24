@@ -48,3 +48,7 @@
 .card-text{
     margin:5px;
 }
+.btn-success{
+    width:162px;
+    margin: 10px auto
+}
