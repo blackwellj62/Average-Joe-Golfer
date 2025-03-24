@@ -13,7 +13,7 @@ export const Home = () => {
             Grab your clubs... and maybe a stress ball⛳</p>
         </div>
         <div className="button-container">
-            <button className="btn btn-primary" onClick={()=>{navigate("/posts")}}>Enter</button>
+            <button className="btn btn-warning" onClick={()=>{navigate("/posts")}}>Enter</button>
         </div>
         </>
         

@@ -29,6 +29,6 @@ html,body{
     display: flex;
     justify-content: center;
 }
-.btn-primary{
+.btn-warning{
     width:162px
 }

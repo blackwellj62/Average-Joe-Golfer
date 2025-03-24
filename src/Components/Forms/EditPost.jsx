@@ -78,7 +78,7 @@ export const EditPost = ({currentUser}) => {
                     <input className="form-control"
                     type="text"
                     value={post.imageUrl? post.imageUrl : ""}
-                    name="image"
+                    name="imageUrl"
                     onChange={handleInputChange}
                     />
                 </div>
