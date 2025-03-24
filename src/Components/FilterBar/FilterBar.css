@@ -1,0 +1,12 @@
+.filter-bar{
+    margin: 20px;
+}
+
+.post-search{
+    border-radius: 15px;
+    padding:5px;
+    margin-right: 10px;
+}
+.category-filter{
+    border-radius: 10px;
+}
