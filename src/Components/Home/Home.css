@@ -25,3 +25,10 @@ html,body{
     width: 100%;
     background-blend-mode: darken;
 }
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+.btn-warning{
+    width:162px
+}

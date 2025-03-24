@@ -27,6 +27,10 @@ export const PostDetails = ({currentUser}) => {
           <h5 className="card-title">{post.title}</h5>
             By:<Link to={`/profile/${post.user?.id}`}>{post.user?.name}<br/></Link>
            {post.date}
+           <div className="post-image">
+        {post.imageUrl ?    
+        <img src={post.imageUrl} alt="golf image"/> :""}
+           </div>
           <p className="card-text">
            {post.body}<br/>
           </p>

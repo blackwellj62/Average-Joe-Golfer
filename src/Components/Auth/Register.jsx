@@ -95,10 +95,13 @@ export const Register = (props) => {
         </fieldset>
         <fieldset className="auth-fieldset">
           <div>
-            <button type="submit">Register</button>
+            <button type="submit" className="btn btn-warning">Register</button>
           </div>
         </fieldset>
       </form>
+      <div className="button-container">
+        <button className="btn btn-primary" onClick={()=>{navigate(-1)}}>Back</button>
+      </div>
     </main>
   )
 }

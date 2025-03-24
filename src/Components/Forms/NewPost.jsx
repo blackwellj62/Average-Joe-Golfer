@@ -9,6 +9,7 @@ export const NewPost = ({currentUser}) => {
     const [chosenCategory, setChosenCategory] = useState('')
     const [title, setTitle] = useState('')
     const [body, setBody] = useState('')
+    const [imageUrl, setImageUrl] = useState('')
     const navigate= useNavigate()
 
     useEffect(()=>{
@@ -26,7 +27,8 @@ export const NewPost = ({currentUser}) => {
             body: body,
             date:  currentDate,
             userId: currentUser.id,
-            categoryId: parseInt(chosenCategory)
+            categoryId: parseInt(chosenCategory),
+            imageUrl: imageUrl 
         }
         newPost(post).then(()=>{
             navigate('/my-posts')
@@ -62,6 +64,19 @@ export const NewPost = ({currentUser}) => {
                         setBody(event.target.value)
                     }}>
                      </input>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div className="form-image">
+                    <h3>Image URL:</h3>
+                    <input className="form-control"
+                    type="text"
+                    placeholder="Enter Image URL here"
+                    name="image"
+                    onChange={(event)=>{
+                        setImageUrl(event.target.value)
+                    }}
+                    />
                 </div>
             </fieldset>
             <fieldset>
