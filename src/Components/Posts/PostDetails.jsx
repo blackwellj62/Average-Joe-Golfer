@@ -35,7 +35,7 @@ export const PostDetails = ({currentUser}) => {
           <LikeButton currentUser={currentUser} post={post}/>}
         </div>
         <div className="card-footer text-body-secondary">{post.likes?.length}❤️</div>
-        
+        <button className="btn btn-success" onClick={()=>{navigate(-1)}}>Back</button>
       </div>
     );
 }
