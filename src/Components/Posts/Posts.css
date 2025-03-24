@@ -52,3 +52,10 @@
     width:162px;
     margin: 10px auto
 }
+img{
+    max-width:500px;
+    max-height: 300px;
+}
+.post-image{
+    margin:10px;
+}

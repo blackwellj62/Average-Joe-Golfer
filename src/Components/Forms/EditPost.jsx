@@ -36,7 +36,8 @@ export const EditPost = ({currentUser}) => {
             body: post.body,
             date: currentDate,
             userId: currentUser.id,
-            categoryId: parseInt(post.categoryId)
+            categoryId: parseInt(post.categoryId),
+            imageUrl: post.imageUrl
         }
         updatePost(editedPost).then(()=>{
             navigate("/my-posts")
@@ -69,6 +70,17 @@ export const EditPost = ({currentUser}) => {
                     required
                     onChange={handleInputChange}>
                      </input>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div className="form-image">
+                    <h3>Image URL:</h3>
+                    <input className="form-control"
+                    type="text"
+                    value={post.imageUrl? post.imageUrl : ""}
+                    name="image"
+                    onChange={handleInputChange}
+                    />
                 </div>
             </fieldset>
             <fieldset>
