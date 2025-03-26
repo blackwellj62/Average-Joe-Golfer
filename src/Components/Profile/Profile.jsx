@@ -32,6 +32,7 @@ export const Profile = ({currentUser}) => {
         </p>
         <button className="btn btn-primary" onClick={()=>{navigate('/edit-profile')}}>Edit</button>
         </div>
+        <button className="btn btn-warning" onClick={()=>{navigate(-1)}}>Back</button>
     </div>
     );
 }
