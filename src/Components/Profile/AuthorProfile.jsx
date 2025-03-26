@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
 import "./Profile.css"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { getUserById } from "../../Services/Users.jsx"
 
 export const AuthorProfile = () => {
     const [userById,setUserById] = useState({})
     const {userId} = useParams()
-
+    const navigate = useNavigate()
     useEffect(()=>{
         getUserById(userId).then(data =>{
             const userObj = data
@@ -23,6 +23,7 @@ export const AuthorProfile = () => {
             {userById.experience}
             {userById.experience === 1 ? ' year' : ' years'} of golf experience
         </p>
+        <button className="btn btn-warning" onClick={()=>{navigate(-1)}}>Back</button>
         </div>
     </div>
     );

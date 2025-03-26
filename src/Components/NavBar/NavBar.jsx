@@ -4,7 +4,7 @@ import "./NavBar.css"
 export const NavBar = () => {
     const navigate = useNavigate
     return(
-        <ul className="navbar bg-primary" data-bs-theme="dark">
+      <ul className="navbar bg-primary" data-bs-theme="dark">
             <li className="navbar-item">
                 <Link to="/" className="navbar-link">Home</Link>
             </li>
