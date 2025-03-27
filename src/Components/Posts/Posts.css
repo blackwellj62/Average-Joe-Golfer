@@ -50,7 +50,7 @@
 }
 .btn-success{
     width:162px;
-    margin: 10px auto
+    margin: 5px
 }
 img{
     max-width:300px;
@@ -58,4 +58,7 @@ img{
 }
 .post-image{
     margin:10px;
+}
+.btn-danger{
+    margin:5px
 }

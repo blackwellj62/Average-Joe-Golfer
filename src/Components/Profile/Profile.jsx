@@ -31,8 +31,8 @@ export const Profile = ({currentUser}) => {
             {loggedInUser?.experience === 1 ? ' year' : ' years'} of golf experience
         </p>
         <button className="btn btn-primary" onClick={()=>{navigate('/edit-profile')}}>Edit</button>
+        <br/><button className="btn btn-success" onClick={()=>{navigate(-1)}}>Back</button>
         </div>
-        <button className="btn btn-warning" onClick={()=>{navigate(-1)}}>Back</button>
     </div>
     );
 }

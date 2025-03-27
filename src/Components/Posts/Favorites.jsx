@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { getAllPosts } from "../../Services/PostServices.jsx"
 import { getLikes, removeLikes} from "../../Services/Likes.jsx"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 export const Favorites = ({currentUser}) => {
     
@@ -9,6 +9,7 @@ export const Favorites = ({currentUser}) => {
     const [allLikes, setAllLikes] = useState([])
     const [filteredLikes, setFilteredLikes] = useState([])
     const [filteredPosts, setFilteredPosts] = useState([])
+    const navigate = useNavigate()
 
     useEffect(()=>{
         reFetch()
@@ -69,6 +70,7 @@ export const Favorites = ({currentUser}) => {
               </Link>
               <div className="card-footer">
                 <button className="btn btn-danger" onClick={()=>{handleRemove(post.id)}} >Remove from Favorites</button>
+                <br/><button className="btn btn-success" onClick={()=>{navigate(-1)}}>Back</button>
               </div>
             </div>
           </div>

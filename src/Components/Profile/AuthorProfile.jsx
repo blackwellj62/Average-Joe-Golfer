@@ -23,7 +23,7 @@ export const AuthorProfile = () => {
             {userById.experience}
             {userById.experience === 1 ? ' year' : ' years'} of golf experience
         </p>
-        <button className="btn btn-warning" onClick={()=>{navigate(-1)}}>Back</button>
+        <button className="btn btn-success" onClick={()=>{navigate(-1)}}>Back</button>
         </div>
     </div>
     );
