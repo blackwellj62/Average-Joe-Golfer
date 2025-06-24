@@ -14,7 +14,7 @@ Average Joe Golfer is a Golf Forum application where users can share their golfi
 
 1.  Clone the repository:
 
-    * git clone https://github.com/your-username/average-joe-golfer.git
+    * git clone https://github.com/blackwellj62/Average-Joe-Golfer
   
 2.  Install dependencies:
 
