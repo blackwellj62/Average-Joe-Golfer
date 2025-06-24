@@ -386,31 +386,7 @@
       "categoryId": 2,
       "imageUrl": "https://i.ebayimg.com/00/s/NDgwWDY0MA==/z/qvAAAOSwb5llIBXX/$_57.JPG?set_id=880000500F"
     },
-    {
-      "id": 28,
-      "title": "Uniforms",
-      "body": "Picture it, high school, 2003. Wilbur forgot his uniform.",
-      "date": "3/28/2025",
-      "userId": 23,
-      "categoryId": 4,
-      "imageUrl": "https://tullahomabands.org/wp-content/uploads/2015/07/history4.jpg"
-    },
-    {
-      "title": "Test",
-      "body": "Test",
-      "date": "3/24/2025",
-      "userId": 22,
-      "categoryId": 1,
-      "id": 29
-    },
-    {
-      "title": "Test2",
-      "body": "Test2",
-      "date": "3/24/2025",
-      "userId": 22,
-      "categoryId": 3,
-      "id": 30
-    },
+    
     {
       "id": 31,
       "title": "Wilson Golf Hat",
@@ -419,15 +395,6 @@
       "userId": 21,
       "categoryId": 4,
       "imageUrl": "https://i5.walmartimages.com/seo/Wilson-Men-s-Pro-Tour-Golf-Hat-White-and-Navy_70f4a6d2-52a7-4551-bd95-72c1a3ffa05d.65a730f6cc97199902e8eefde5f9a46e.jpeg"
-    },
-    {
-      "title": "TO MARTON",
-      "body": "You see, what had happened was... ",
-      "date": "3/28/2025",
-      "userId": 24,
-      "categoryId": 4,
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTltTAguOCRheIe_qsEw-3I9anCZzcACY7e3g&s",
-      "id": 32
     }
   ],
   "likes": [
