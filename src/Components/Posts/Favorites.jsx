@@ -70,7 +70,7 @@ export const Favorites = ({currentUser}) => {
               </Link>
               <div className="card-footer">
                 <button className="btn btn-danger" onClick={()=>{handleRemove(post.id)}} >Remove from Favorites</button>
-                <br/><button className="btn btn-success" onClick={()=>{navigate(-1)}}>Back</button>
+                <br/><button className="btn btn-primary" onClick={()=>{navigate(-1)}}>Back</button>
               </div>
             </div>
           </div>

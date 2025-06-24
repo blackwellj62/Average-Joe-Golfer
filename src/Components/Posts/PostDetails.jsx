@@ -38,8 +38,9 @@ export const PostDetails = ({currentUser}) => {
           <button className="btn btn-primary" onClick={()=>{navigate(`/edit/${post.id}`)}}>Edit</button> :
           <LikeButton currentUser={currentUser} post={post}/>}
         </div>
-        <div className="card-footer text-body-secondary">{post.likes?.length}❤️</div>
-        <button className="btn btn-success" onClick={()=>{navigate(-1)}}>Back</button>
+        <div className="card-footer text-body-secondary">{post.likes?.length}❤️
+        <br/><button className="btn btn-primary" onClick={()=>{navigate(-1)}}>Back</button>
+        </div>
       </div>
     );
 }

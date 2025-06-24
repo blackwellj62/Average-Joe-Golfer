@@ -1,0 +1,590 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Birdie McTee",
+      "email": "birdie@tee.com",
+      "experience": 7
+    },
+    {
+      "id": 2,
+      "name": "Chip Putterson",
+      "email": "chip@putter.com",
+      "experience": 5
+    },
+    {
+      "id": 3,
+      "name": "Foretune Smiter",
+      "email": "foretune@smiter.com",
+      "experience": 12
+    },
+    {
+      "id": 4,
+      "name": "Mr. Bogie Divot",
+      "email": "bogie@mrdivot.com",
+      "experience": 3
+    },
+    {
+      "id": 5,
+      "name": "Putter McShank",
+      "email": "putter@mcshank.com",
+      "experience": 1
+    },
+    {
+      "id": 6,
+      "name": "Ace Sandtrap",
+      "email": "ace@sandtrap.com",
+      "experience": 5
+    },
+    {
+      "id": 7,
+      "name": "Wedge O'Whack",
+      "email": "wedge@whack.com",
+      "experience": 8
+    },
+    {
+      "id": 8,
+      "name": "Caddy Longdrive",
+      "email": "caddy@longdrive.com",
+      "experience": 6
+    },
+    {
+      "id": 9,
+      "name": "Slice McGolfer",
+      "email": "slice@mcgolfer.com",
+      "experience": 2
+    },
+    {
+      "id": 10,
+      "name": "Driver Birdie",
+      "email": "driver@birdie.com",
+      "experience": 4
+    },
+    {
+      "id": 11,
+      "name": "Tee McSwing",
+      "email": "tee@mswing.com",
+      "experience": 9
+    },
+    {
+      "id": 12,
+      "name": "Fairway Flinger",
+      "email": "fairway@flinger.com",
+      "experience": 4
+    },
+    {
+      "id": 13,
+      "name": "Par Tee",
+      "email": "par@tee.com",
+      "experience": 11
+    },
+    {
+      "id": 14,
+      "name": "Hooky McSlice",
+      "email": "hooky@mcslice.com",
+      "experience": 6
+    },
+    {
+      "id": 15,
+      "name": "Caddy Wedge",
+      "email": "caddy@wedge.com",
+      "experience": 8
+    },
+    {
+      "id": 16,
+      "name": "Eagle Shaftson",
+      "email": "eagle@shaftson.com",
+      "experience": 14
+    },
+    {
+      "id": 17,
+      "name": "Duff McDuffer",
+      "email": "duff@mcduffer.com",
+      "experience": 1
+    },
+    {
+      "id": 18,
+      "name": "Birdie Chipster",
+      "email": "birdie@chipster.com",
+      "experience": 5
+    },
+    {
+      "id": 19,
+      "name": "Grip McGrind",
+      "email": "grip@mcgrind.com",
+      "experience": 10
+    },
+    {
+      "id": 20,
+      "name": "Iron Swinger",
+      "email": "iron@swinger.com",
+      "experience": 13
+    },
+    {
+      "id": 21,
+      "name": "Old Fire Golf",
+      "email": "oldfiregolf@triangle.com",
+      "experience": 2
+    },
+    {
+      "id": 22,
+      "name": "Dave",
+      "email": "dave@email.com",
+      "experience": 4
+    },
+    {
+      "name": "MARTON",
+      "email": "MARTON@triangle.com",
+      "experience": 1,
+      "id": 23
+    },
+    {
+      "name": "Wilbur",
+      "email": "wilbur@countrybreakfast.com",
+      "experience": 1,
+      "id": 24
+    },
+    {
+      "name": "golfer",
+      "email": "golfer@golfer.com",
+      "experience": 3,
+      "id": 25
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Golf Course"
+    },
+    {
+      "id": 2,
+      "name": "Clubs"
+    },
+    {
+      "id": 3,
+      "name": "Golf Balls"
+    },
+    {
+      "id": 4,
+      "name": "Accessories"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Cleveland Launcher HB Driver - Super Forgiving",
+      "body": "I recently upgraded to the Cleveland Launcher HB driver and it's been fantastic. The forgiveness is incredible, and I've gained a noticeable increase in distance. It's also very easy to hit off the tee. Definitely recommend for anyone looking for a driver that's all about comfort and performance.",
+      "date": "3/24/2025",
+      "userId": 5,
+      "categoryId": 2,
+      "imageUrl": "https://www.golfavenue.com/media/catalog/product/l/a/launcher-hb-8766-1_1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Wilson Staff D9 Driver - A Game Changer",
+      "body": "I recently upgraded to the Wilson Staff D9 Driver, and I'm absolutely loving it. The ball flight is incredibly straight, and I've gained more distance off the tee. If you're in the market for a new driver, this is definitely worth considering.",
+      "date": "3/24/2025",
+      "userId": 9,
+      "categoryId": 2,
+      "imageUrl": "https://golfalot.com/wp-content/uploads/2024/09/d9_headcoverhero.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Titleist Pro V1 Balls - Perfect for Precision",
+      "body": "I've been using Titleist Pro V1 golf balls for a while now, and they never disappoint. The feel around the greens is unmatched, and I've noticed a significant improvement in my short game. Worth every penny if you're looking for a premium ball.",
+      "date": "3/24/2025",
+      "userId": 7,
+      "categoryId": 3,
+      "imageUrl": "https://golf.com/wp-content/uploads/2021/01/titleist-pro-v1-balls-2021-1024x576.jpg"
+    },
+    {
+      "id": 4,
+      "title": "The Callaway Apex Irons are Incredible",
+      "body": "Just tried out the Callaway Apex Irons, and I'm really impressed. The feel and control are superb, and the distance has been amazing. As a mid-handicap player, they've helped me improve my consistency. Highly recommend!",
+      "date": "3/24/2025",
+      "userId": 2,
+      "categoryId": 2,
+      "imageUrl": "https://www.golfwrx.com/wp-content/uploads/2015/09/Callaway_2016_Apex_Apex_Pro_irons.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Ping G425 Fairway Wood - Must Have!",
+      "body": "The Ping G425 Fairway Wood is my new secret weapon. I love how versatile it is, and it's perfect for both off the tee and fairway shots. It's incredibly forgiving, and I've seen a noticeable increase in my accuracy. Highly recommended!",
+      "date": "3/24/2025",
+      "userId": 4,
+      "categoryId": 2,
+      "imageUrl": "https://www.golfwrx.com/wp-content/uploads/2020/10/Ping-G425-Max-fairway.png"
+    },
+    {
+      "id": 6,
+      "title": "Cobra King Speedzone Driver - Worth the Hype",
+      "body": "Just picked up the Cobra King Speedzone Driver, and it's everything I was hoping for. It has a great feel, and I've noticed a solid increase in both distance and accuracy. The adjustable settings also let me fine-tune it to my swing. Definitely worth checking out!",
+      "date": "3/24/2025",
+      "userId": 6,
+      "categoryId": 2,
+      "imageUrl": "https://res.cloudinary.com/pgatour-prod/pgatour/news/editorial/2019/11/19/cobra-847-tursky.jpg"
+    },
+    {
+      "id": 7,
+      "title": "I Finally Tried the TaylorMade SIM2 Driver!",
+      "body": "I've been hearing about the TaylorMade SIM2 Driver for months, and I finally got my hands on one. It's everything they say it is! More distance, better control, and a great sound off the clubface. This is my new favorite driver.",
+      "date": "3/24/2025",
+      "userId": 1,
+      "categoryId": 2,
+      "imageUrl": "https://golfweek.usatoday.com/gcdn/authoring/images/smg/2024/11/22/SGLF/76494889007-87-778084182.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "Great Value in Callaway Chrome Soft Balls",
+      "body": "The Callaway Chrome Soft golf balls have quickly become my go-to. They provide an excellent feel around the greens, and I've found my approach shots to be more accurate with them. For the price, it's hard to beat!",
+      "date": "3/24/2025",
+      "userId": 3,
+      "categoryId": 3,
+      "imageUrl": "https://www.golfballnut.com/cdn/shop/files/CAL-CS360-White-12-PR-R.png?v=1725996744"
+    },
+    {
+      "id": 9,
+      "title": "Great Day at Riverside Meadows Golf Course",
+      "body": "Riverside Meadows Golf Course is a wonderful local course that offers a little bit of everything. With water on several holes and some long par 3s, it's both fun and challenging. Great spot for golfers of all skill levels.",
+      "date": "3/24/2025",
+      "userId": 6,
+      "categoryId": 1,
+      "imageUrl": "https://images.golftrips.com/courselarge/corrstwon-golf-club-meadow.jpg"
+    },
+    {
+      "id": 10,
+      "title": "My New Favorite Golf Glove - FootJoy StaSof",
+      "body": "I recently switched to the FootJoy StaSof golf glove, and I couldn't be happier. The fit is amazing, and the grip is perfect in both dry and wet conditions. If you're tired of gloves that wear out quickly, give this one a try - it's built to last!",
+      "date": "3/24/2025",
+      "userId": 10,
+      "categoryId": 4,
+      "imageUrl": "https://cdn.mos.cms.futurecdn.net/pXY8tjV6GNB7ed6vjxKRye-1280-80.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Great Value at Hidden Oaks Golf Club",
+      "body": "Played Hidden Oaks Golf Club last weekend and was pleasantly surprised. It's a charming local course with tight fairways and tricky greens. The course is very well-maintained, and it's a fantastic value for the price. Highly recommend for a quick weekend round!",
+      "date": "3/24/2025",
+      "userId": 3,
+      "categoryId": 1,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwmJKtE4nwnb-61TmKoeILEKL2FjxR9-xPrQ&s"
+    },
+    {
+      "id": 12,
+      "title": "Srixon Z-Star Balls Are Fantastic",
+      "body": "I've been using Srixon Z-Star golf balls for the past month and the performance is amazing. They offer excellent spin and control around the greens, plus a solid feel off the tee. Highly recommend for anyone looking to step up their ball game.",
+      "date": "3/24/2025",
+      "userId": 7,
+      "categoryId": 3,
+      "imageUrl": "https://cdn.mos.cms.futurecdn.net/DWqNnY6UNDyxBFayY25vHL-1280-80.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Local Gem - Willow Creek Golf Course",
+      "body": "If you're ever in the area, don't miss Willow Creek Golf Course. It's a great little course with some challenging water hazards and doglegs. The staff is friendly, and the pace of play is quick. Perfect for an afternoon round without the crowds.",
+      "date": "3/24/2025",
+      "userId": 2,
+      "categoryId": 1,
+      "imageUrl": "https://www.invitedclubs.com/globalassets/willow-creek-golf--country-club/_images/willow-creek-clubhouse-18_1920.jpg?format=webp"
+    },
+    {
+      "id": 14,
+      "title": "Cleveland CBX 2 Wedge - A Game Saver",
+      "body": "I recently added the Cleveland CBX 2 wedge to my bag and I'm very impressed. The feel around the greens is excellent, and I've been able to get more spin on chips and approach shots. If you're looking for a wedge that provides control, this one's a winner.",
+      "date": "3/24/2025",
+      "userId": 4,
+      "categoryId": 2,
+      "imageUrl": "https://cdn.mos.cms.futurecdn.net/k5bTdLxDJMgaq76Yw3RgRU.jpg"
+    },
+    {
+      "id": 15,
+      "title": "A Hidden Gem - Pine View Golf Course",
+      "body": "Pine View Golf Course is an underrated local spot that offers a good mix of challenges. It's affordable, not too crowded, and you can tell the greens are cared for. The layout keeps you on your toes but isn't too punishing. Perfect for golfers looking for a relaxing round.",
+      "date": "3/24/2025",
+      "userId": 5,
+      "categoryId": 1,
+      "imageUrl": "https://www.pineviewgc.com/wp-content/uploads/sites/9360/2024/02/showcase4.jpg?w=1920&h=700&crop=1"
+    },
+    {
+      "id": 16,
+      "title": "Titleist 620 CB Irons - A Smooth Ride",
+      "body": "Just upgraded to the Titleist 620 CB irons, and they have been a game-changer. These irons are incredibly forgiving, yet provide great control and workability. Highly recommend to anyone looking for an iron that offers a perfect balance of distance and accuracy.",
+      "date": "3/24/2025",
+      "userId": 10,
+      "categoryId": 2,
+      "imageUrl": "https://www.golftraders.com.au/assets/full/L1419.jpg?20241026024231"
+    },
+    {
+      "id": 17,
+      "title": "Great Day at Brookside Golf Course",
+      "body": "Brookside Golf Course is a fun, local course that packs a lot of character. The layout is challenging, but there are some forgiving holes. Overall, it's great for a quick round with friends, and the greens were in fantastic shape.",
+      "date": "3/24/2025",
+      "userId": 8,
+      "categoryId": 1,
+      "imageUrl": "https://golf-pass.brightspotcdn.com/dims4/default/f5b2486/2147483647/strip/true/crop/1280x826+0+67/resize/930x600!/format/webp/quality/90/?url=https%3A%2F%2Fgolf-pass-brightspot.s3.amazonaws.com%2Fda%2F23%2Fef7713c93388de63d2cb544c17db%2F15266.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Cobra King F9 Driver - A Beast Off the Tee",
+      "body": "The Cobra King F9 driver has completely transformed my game. I've gained noticeable distance off the tee, and it's much more forgiving than my old driver. The adjustable weights are also a great feature to fine-tune your shot shape. Worth every penny!",
+      "date": "3/24/2025",
+      "userId": 1,
+      "categoryId": 2,
+      "imageUrl": "https://golfalot.com/wp-content/uploads/2024/09/reviewdriverhero2.jpg"
+    },
+    {
+      "id": 19,
+      "title": "My Favorite Local Course - Green Valley Golf Club",
+      "body": "Green Valley Golf Club is a hidden treasure in the area. The course is scenic with lots of variety in hole designs. It's a very walkable course with a laid-back vibe. If you're in the area, it's worth checking out for a peaceful and affordable round.",
+      "date": "3/24/2025",
+      "userId": 6,
+      "categoryId": 1,
+      "imageUrl": "https://golf-pass.brightspotcdn.com/dims4/default/527b6d4/2147483647/strip/true/crop/1480x833+0+3/resize/590x332!/quality/90/?url=https%3A%2F%2Fgolf-pass-brightspot.s3.amazonaws.com%2F9a%2F93%2F494762474408a1bbb9348e3fde34%2Fsy2.2.1.JPG"
+    },
+    {
+      "id": 20,
+      "title": "Taylormade M6 Fairway Wood - Excellent for Distance",
+      "body": "I recently bought the TaylorMade M6 Fairway Wood and it's one of the best purchases I've made this year. It's incredibly easy to hit, and I've noticed a huge improvement in both distance and accuracy. Highly recommend for golfers looking to improve their fairway game.",
+      "date": "3/24/2025",
+      "userId": 9,
+      "categoryId": 2,
+      "imageUrl": "https://golfalot.com/wp-content/uploads/2024/09/7_reviewhero2.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Great Short Game with Callaway Mack Daddy Wedge",
+      "body": "The Callaway Mack Daddy wedges have been a huge help for my short game. I love the versatility around the greens, and the spin control is fantastic. If you're struggling with your wedges, these will make a noticeable difference.",
+      "date": "3/24/2025",
+      "userId": 4,
+      "categoryId": 2,
+      "imageUrl": "https://uploads.mygolfspy.com/uploads/2015/06/Callaway-Mack-Daddy-PM-GRIND-17.jpg"
+    },
+    {
+      "id": 22,
+      "title": "Local Favorite - Sunset Ridge Golf Course",
+      "body": "Sunset Ridge Golf Course is a fantastic little gem. The course is always in great shape, and the staff is super friendly. It's perfect for a relaxed round with no pressure. It's also incredibly affordable, making it a go-to for regular play.",
+      "date": "3/24/2025",
+      "userId": 2,
+      "categoryId": 1,
+      "imageUrl": "https://www.sunsetridgecc.org/images/dynamic/getImage.gif?ID=100001472"
+    },
+    {
+      "id": 23,
+      "title": "Wilson Staff Model CB Irons - Pure Feel",
+      "body": "The Wilson Staff Model CB Irons are fantastic! They have a great feel and offer plenty of feedback. If you're looking for irons with precision and a solid feel, these should definitely be on your radar. Very happy with my purchase.",
+      "date": "3/24/2025",
+      "userId": 7,
+      "categoryId": 2,
+      "imageUrl": "https://www.golfwrx.com/wp-content/uploads/2024/01/Screenshot-2024-01-11-at-11.54.17.png"
+    },
+    {
+      "id": 25,
+      "title": "Wilson Irons from 1993!",
+      "body": "I've been playing a set of Wilson Staff Ultra 45 irons from 1993! Found these irons at a thrift store and I gotta say they are incredibly forgiving. I'm sure a more modern iron would out perform them but for a high handicapper such as myself, they more than get the job done 6.2/6.2 highly recommend!",
+      "date": "4/6/2025",
+      "userId": 21,
+      "categoryId": 2,
+      "imageUrl": "https://i.ebayimg.com/00/s/NDgwWDY0MA==/z/qvAAAOSwb5llIBXX/$_57.JPG?set_id=880000500F"
+    },
+    {
+      "id": 28,
+      "title": "Uniforms",
+      "body": "Picture it, high school, 2003. Wilbur forgot his uniform.",
+      "date": "3/28/2025",
+      "userId": 23,
+      "categoryId": 4,
+      "imageUrl": "https://tullahomabands.org/wp-content/uploads/2015/07/history4.jpg"
+    },
+    {
+      "title": "Test",
+      "body": "Test",
+      "date": "3/24/2025",
+      "userId": 22,
+      "categoryId": 1,
+      "id": 29
+    },
+    {
+      "title": "Test2",
+      "body": "Test2",
+      "date": "3/24/2025",
+      "userId": 22,
+      "categoryId": 3,
+      "id": 30
+    },
+    {
+      "id": 31,
+      "title": "Wilson Golf Hat",
+      "body": "This Wilson Staff Golf Hat is great! Great design, feels good, and you can't beat the price!",
+      "date": "3/24/2025",
+      "userId": 21,
+      "categoryId": 4,
+      "imageUrl": "https://i5.walmartimages.com/seo/Wilson-Men-s-Pro-Tour-Golf-Hat-White-and-Navy_70f4a6d2-52a7-4551-bd95-72c1a3ffa05d.65a730f6cc97199902e8eefde5f9a46e.jpeg"
+    },
+    {
+      "title": "TO MARTON",
+      "body": "You see, what had happened was... ",
+      "date": "3/28/2025",
+      "userId": 24,
+      "categoryId": 4,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTltTAguOCRheIe_qsEw-3I9anCZzcACY7e3g&s",
+      "id": 32
+    }
+  ],
+  "likes": [
+    {
+      "id": 1,
+      "userId": 2,
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "postId": 2
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "postId": 3
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "postId": 4
+    },
+    {
+      "id": 5,
+      "userId": 6,
+      "postId": 5
+    },
+    {
+      "id": 6,
+      "userId": 7,
+      "postId": 6
+    },
+    {
+      "id": 7,
+      "userId": 8,
+      "postId": 7
+    },
+    {
+      "id": 8,
+      "userId": 9,
+      "postId": 8
+    },
+    {
+      "id": 9,
+      "userId": 10,
+      "postId": 9
+    },
+    {
+      "id": 10,
+      "userId": 1,
+      "postId": 10
+    },
+    {
+      "id": 11,
+      "userId": 3,
+      "postId": 11
+    },
+    {
+      "id": 12,
+      "userId": 4,
+      "postId": 12
+    },
+    {
+      "id": 13,
+      "userId": 5,
+      "postId": 13
+    },
+    {
+      "id": 14,
+      "userId": 6,
+      "postId": 14
+    },
+    {
+      "id": 15,
+      "userId": 7,
+      "postId": 15
+    },
+    {
+      "userId": 4,
+      "postId": 1,
+      "id": 16
+    },
+    {
+      "userId": 4,
+      "postId": 2,
+      "id": 17
+    },
+    {
+      "userId": 21,
+      "postId": 2,
+      "id": 18
+    },
+    {
+      "userId": 21,
+      "postId": 4,
+      "id": 19
+    },
+    {
+      "userId": 21,
+      "postId": 8,
+      "id": 20
+    },
+    {
+      "userId": 21,
+      "postId": 16,
+      "id": 21
+    },
+    {
+      "userId": 21,
+      "postId": 23,
+      "id": 22
+    },
+    {
+      "userId": 21,
+      "postId": 21,
+      "id": 23
+    },
+    {
+      "userId": 22,
+      "postId": 25,
+      "id": 28
+    },
+    {
+      "userId": 22,
+      "postId": 2,
+      "id": 29
+    },
+    {
+      "userId": 23,
+      "postId": 25,
+      "id": 31
+    },
+    {
+      "userId": 22,
+      "postId": 1,
+      "id": 32
+    },
+    {
+      "userId": 21,
+      "postId": 28,
+      "id": 33
+    },
+    {
+      "userId": 24,
+      "postId": 31,
+      "id": 34
+    },
+    {
+      "userId": 24,
+      "postId": 25,
+      "id": 35
+    },
+    {
+      "userId": 23,
+      "postId": 25,
+      "id": 36
+    }
+  ]
+}
